@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+    padding-right: 50px;
+    margin-top: 230px;
+    border-top: 1px solid white ;
+}
+
+.pie{
+    background-color:#292828;
+    color:white;
+}
+
+.fondoContacto{
+    height: 90px;
+}

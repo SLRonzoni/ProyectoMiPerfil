@@ -1,0 +1,15 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+
+.menu {
+    background-color:#292828; 
+    border:1px solid white;
+}
+
+.menu a {
+    color:white !important;
+
+}
+
+

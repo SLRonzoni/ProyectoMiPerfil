@@ -1,0 +1,9 @@
+[
+ {"id":1,"nombreCurso":"Inglés para Desarrolladores","entidad":"Polotic Misiones","lenguaje":["Ingles"],"inicio":"2021","fin":"2021","cargaHs":"18 hs"},
+ {"id":2,"nombreCurso":"Desarrollo Web FullStack","entidad":"Media Chicas, Codear Futur@","lenguaje":["Html, ","Css, ","Javascript, ","NodeJS, ","ReactJS "],"inicio":"2021","fin":"2021","cargaHs":"50 hs"},
+ {"id":3,"nombreCurso":"Javascript Avanzado","entidad":"Centro Universitario Vicente López","lenguaje":["Javascript"],"inicio":"2021","fin":"2021","cargaHs":"30 hs"},
+ {"id":4,"nombreCurso":"Java","entidad":"Centro Universitario Vicente López","lenguaje":["Java"],"inicio":"2020","fin":"2020","cargaHs":" 25 hs"},
+ {"id":5,"nombreCurso":"Asistente Administrativa Contable","entidad":"Capacitarte","lenguaje":["Administración y Finanzas"],"inicio":"2020","fin":"2020","cargaHs":"30 hs"},
+ {"id":6,"nombreCurso":"Conciliaciones Bancarias","entidad":"Capacitarte","lenguaje":["Administración y Finanzas"],"inicio":"2020","fin":"2020","cargaHs":"15 hs"},
+ {"id":7,"nombreCurso":"Direccion y Administracion de empresas","entidad":"American Mangement & Business","lenguaje":["Administración y Finanzas"],"inicio":"2012","fin":"2012","cargaHs":"70 hs"}
+]

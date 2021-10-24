@@ -1,0 +1,66 @@
+.home{
+  margin-top: -21px;
+}
+
+.link{
+  width: 22%;
+  font-size: 13px;
+  height: 15%;
+  margin-left:77%;
+  box-shadow:  0 0 0.3rem #292828;
+}
+
+.linkProyecto{
+  width: 8%;
+  font-size: 10px;
+  margin-left:90%;
+}
+
+.link:hover{
+  background-color:#292828;
+  box-shadow:  0 0 0.3rem grey;
+  color:#FAEBD7;
+}
+
+
+h5{
+ text-decoration: solid;
+}
+
+.card-body{
+  border:3px solid #fa5555 ;
+  box-shadow:  0 0 0.7rem #292828; 
+  color:black;
+}
+
+.card-body:hover{ 
+  box-shadow: 0 0 1rem  #fa5555 inset;
+}
+
+/* .card-body:focus-within{
+  border:2px solid rgb(38, 56, 247);
+  background-color: aliceblue;
+  color:rgb(38, 56, 247);
+} */
+
+p, span{
+  color: black;
+  font-size: 13px;
+}
+
+.btn{
+  background-color:#fa5555 ;
+  color: white;
+}
+
+.textoAntecedentes{
+  color: white;
+  margin-top: -5px;
+  margin-bottom: 90px;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.fondoAntecedentes{
+  height: 297px;
+}
