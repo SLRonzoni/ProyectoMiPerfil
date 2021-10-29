@@ -1,0 +1,35 @@
+
+h1 {
+    font-size: 50px;
+    color:white;
+}
+
+.p {
+    color: white;
+}
+
+p{
+    color:black;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    margin-left:50%;
+    margin-top:6%;
+    border: 2px solid #292828;
+}
+
+header {
+    background-color: #fa5555;
+    padding: 30px 0;
+    border:1px solid white;
+    height: 150px;
+}
+
+.texto-intro {
+    border: 2px solid #292828;
+    text-align:center;
+    color:white;
+    background-color: #292828;
+}

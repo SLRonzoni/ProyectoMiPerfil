@@ -1,0 +1,11 @@
+#root {
+    /* background-color:#292828; */
+    background: #292828;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9a8478, #292828);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9a8478, #292828); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+img {
+    max-width: 100%;
+}

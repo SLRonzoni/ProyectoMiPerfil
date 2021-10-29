@@ -1,0 +1,21 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+
+.menu {
+    background-color:#292828; 
+    border:1px solid white;
+}
+
+.menu a {
+    color:white !important;
+}
+
+.href:hover{
+    box-shadow: 0 0 0.7rem #c01414 inset;
+    background-color: white;
+    color:#292828!important;
+    border-radius: 3px;
+}
+
+

@@ -1,0 +1,85 @@
+
+  .textoConocimiento{
+    font-size: 20px;
+    margin-top: 20px ;
+    color:white;
+  }
+
+  .textoListaCursos{
+    font-size: 17px;
+    margin-top:-30px ;
+    color:white;
+  }
+   
+  .linkProyecto{
+    width: 25%;
+    height: 50%;
+    font-size: 15px;
+    margin-left:59%;
+    margin-top:15px;
+    margin-bottom: 30px;
+    justify-content: center;
+    box-shadow:  0 0 0.4rem #292828;
+  }
+
+  .btnTexto{
+    text-align: start;
+  }
+    
+  .linkProyecto:hover{
+    background-color: aliceblue;
+    color:#d41e1e;
+  }
+  
+  p{
+    color: black;
+    font-size: 13px;
+  }
+
+  .mostrar{
+    font-size: 17px;
+    color:white;
+    margin-top:23px;
+  }
+
+  .columna:hover{
+    box-shadow: 0 0 0.5rem #c01414 inset;
+  }
+
+  .columna{
+    border-bottom:2px solid #292828;
+  }
+
+  .row{
+    margin-left: -10px;
+    margin-top:-20px;
+  }
+
+  .fondoConocimientos{
+    height: 297px;
+  }
+
+  .thead-dark, .table{
+    color:white;
+    font-size: 15px;
+    width: 105%;
+    height: max-content;
+    border-bottom: 1px solid transparent;
+    margin: auto;
+  }
+
+  .table{
+    border: 1px solid white;
+    margin-left:-50px;
+  }
+
+  .datosBody {
+    background-color: white;
+    color: #292828;
+    border: 1px solid #292828;
+    border-radius: 5px;
+  }
+
+  .hs{
+  text-align: center;
+  }
