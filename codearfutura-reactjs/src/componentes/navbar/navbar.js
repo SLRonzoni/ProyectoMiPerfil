@@ -10,10 +10,10 @@ const Menu = () => {
             <Container>
                 <Navbar.Brand href="/"></Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href="/acerca">Acerca de mi</Nav.Link>
-                    <Nav.Link href="/conocimientos">Conocimientos</Nav.Link>
-                    <Nav.Link href="/antecedentes">Antecedentes</Nav.Link>
-                    <Nav.Link href="/contacto">Contacto</Nav.Link>
+                    <Nav.Link className="href" href="/acerca">Acerca de mi</Nav.Link>
+                    <Nav.Link className="href" href="/conocimientos">Conocimientos</Nav.Link>
+                    <Nav.Link className="href" href="/antecedentes">Antecedentes</Nav.Link>
+                    <Nav.Link className="href" href="/contacto">Contacto</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

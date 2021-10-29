@@ -1,58 +1,116 @@
-import React from 'react';
-//import axiosCliente from "../../configAxios/axiosCliente";
-import { useEffect, useState } from 'react';
-
+import React, {useState,useEffect} from 'react';
 import './conocimientos.css';
-import Intro from '../intro/intro';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import  {Container}  from 'react-bootstrap';
+import  Intro from '../intro/intro';
+import { withRouter } from 'react-router';
+import { Row } from 'react-bootstrap';
+import ClassNames from 'classnames';
+import { Fragment } from 'react';
 
-function Conocimientos(){
+const Cursos = () =>{
 
-    const [datos, setDatos] = useState([]);
+    const [cursos,setCursos]=useState([{
+      id:'',
+      nombreCurso:'',
+      entidad:'',
+      lenguaje:'',
+      inicio:'',
+      fin:'',
+      cargaHs:'',
+      certificado:''
+    }]);  
 
-    useEffect(() => 
-       fetch('http://localhost:3000/profile')
-       .then(response => 
-           response.json()
-       )
-       .then(datos => 
-           setDatos(datos)
-       )
-    );
+    // hago peticion para obtener los datos de mi JSON
+    useEffect(() =>{
+        getCursos()
+    },[])
 
+    //funcion para traer TODOS los datos de Api Node
+    const getCursos = async ()=>{
+      const data = await fetch('http://localhost:3000/profile')
+      const estudios = await data.json()
+      setCursos(estudios)
+                            console.log("estudios",estudios)
+                            console.log("cursos",cursos)
+    }
 
-    return(
-        <div className="homeAcerca">
+    //funcion para traer datos FILTRADOS de Api Node
+    const getFiltraCursos = async () =>  {
+      const data = await fetch('http://localhost:3000/profileFilter?lenguaje='+filtraPor)
+      const estudios = await data.json() 
+      setCursos(estudios)
+                            console.log("estudiosFiltrado",estudios)
+                            console.log("cursosMuestra",cursos)
+    }
+
+     let filtraPor;
+     
+   
+    //evento de seleccion de filtro  
+    const cambios=(e)=>{
+        filtraPor=e.target.value;
+        if(e.target.value==='volver'){
+           getCursos()
+                    console.log("volver_cursos",cursos)
+        } else {
+          getFiltraCursos()
+      
+                            console.log("targetName: ",e.target.name)
+                            console.log("targetValue: ",e.target.value)               
+                            console.log("cursos: ",cursos)
+                            console.log("filtraPor: ",filtraPor)       
+    };  
+  }
+
+return (
+  <Fragment>  
+    <div className="homeAcerca">
             <Intro titulo="Silvina Ronzoni" />
             <Container className="fondoConocimientos">
                 <br></br> 
                 <Row>
-                <h2 className="textoConocimiento">Conocimientos</h2>
-                <a href= 'https://github.com/SLRonzoni/MediaChicasGit' className="linkProyecto btn">Ver Mis Proyectos en Github</a>
+                <div className="d-grid gap-5 d-md-flex ">
+                <h2 className="textoConocimiento"><u>Conocimientos</u></h2>
+                <a href= 'https://github.com/SLRonzoni/MediaChicasGit' className="linkProyecto btn  ">Ver Mis Proyectos en Github</a>
+                </div>
                 </Row>
                 <br></br> 
-                <h2 className="textoConocimiento">Lista de Cursos</h2>
+                <Row>                  
+                <div className="d-grid gap-4 d-md-flex justify-content-md-end" >
+                    <p className='mostrar' >Seleccione . . .</p>
+                    <select type="text"name="lenguajes" onChange={cambios} 
+                           className='m-3 mr-md-1 btn linkProyecto btnTexto'>
+                                <option value={'volver'} >Mostrar todas las especialidades</option> 
+                                {cursos.map(unLenguaje=>(
+                                   <option key={unLenguaje.id}
+                                           value={unLenguaje.lenguaje} 
+                                           >{unLenguaje.lenguaje}
+                                   </option>
+                                ))}                                    
+                    </select>
+                       
+                </div>
+                </Row>
                 <br></br>
                 <div className="row">
                 <div className="col-md-12">
-    
-                 <table className="table table-bordered">
+                <h2 className="textoListaCursos">Cursos realizados</h2>
+                <table className="table table-bordered"> 
                     <thead className="thead-dark">
                         <tr> 
-                        <th scope="col">Nro</th>
-                        <th><button className="btnCurso">Nombre</button></th>
-                        <th scope="col">Entidad</th>
-                        <th><button className="btnCurso">Especialización</button></th>
-                        <th scope="col">Inicio</th>
-                        <th><button className="btnCurso">Fin</button></th>
-                        <th scope="col">Carga Horaria</th>
-                        </tr>
+                        <th className="col">Item</th>
+                        <th className="col">Curso</th>
+                        <th className="col">Entidad</th>
+                        <th className="col">Especialidad</th>
+                        <th className="col">Inicio</th>
+                        <th className="col">Fin</th>
+                        <th className="col">Carga Horaria</th>
+                        <th className="col">Certificado</th>
+                        </tr>  
                     </thead> 
 
-                    <tbody className="datos">
-                        
-                        {datos.map(curso => (
+                   <tbody className="datosBody">
+                        {cursos.map(curso => (
                             <tr key={curso.id}>
                             <td className="columna">{curso.id}</td>
                             <td className="columna" >{curso.nombreCurso}</td>
@@ -61,18 +119,24 @@ function Conocimientos(){
                             <td className="columna" >{curso.inicio}</td>
                             <td className="columna" >{curso.fin}</td>
                             <td className="columna hs">{curso.cargaHs}</td>
+                            <td className="columna">{curso.certificado} :white_check_mark: </td>
                             </tr>
                         ))}
                     </tbody>
-
                  </table>
 
-                </div>
-                </div>        
-  
-            </Container>
-        </div>
-    );
-}
+    <br></br>
+    <br></br> 
+      <div>
+          <div className="prestaInput col-sm-5  container ">              
+          </div>
+      </div>
+    </div>
+    </div>
+             </Container>
+      </div> 
+  </Fragment>
+ 
+)};
 
-export default Conocimientos;
+export default withRouter(Cursos);

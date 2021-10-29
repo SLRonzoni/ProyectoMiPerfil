@@ -14,7 +14,7 @@ const Antecedentes = () => {
                 <br></br>     
                 <br></br>          
                 <Row>
-                <h2 className="textoAntecedentes">Experiencia laboral</h2>
+                <h2 className="textoAntecedentes"><u>Experiencia laboral</u></h2>
                 <br></br>     
                 <br></br> 
                 <div className="row">
