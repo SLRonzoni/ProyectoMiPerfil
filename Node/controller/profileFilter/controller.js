@@ -1,17 +1,17 @@
-//localhost:3001/profileFilter?nombreCurso=Java
+//localhost:3001/profileFilter?lenguaje=Java
 
  const {profile,} = require('../../media');
 
  function getFilterByKey(array,key,value){
      return array.filter(function(e){
-         return e[key]==value;
+          return e[key]==value;
          //.toLowerCase==value.toLowerCase();
      });
  }
 
  function controller(req,res){
-     console.log(req.query)
-     let user=getFilterByKey(profile,"nombreCurso",req.query.nombreCurso)
+    let user=getFilterByKey(profile,"lenguaje",req.query.lenguaje)
+   
      res.json(user)
  };
 

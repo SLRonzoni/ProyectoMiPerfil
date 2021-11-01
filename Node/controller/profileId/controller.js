@@ -8,7 +8,7 @@ const{profile,} = require('../../media');
   } 
 
   function controller(req,res){
-      console.log(req.params.id);
+    
       let user=getFilterBykey(profile,"id",req.params.id)
       res.json(user)
   }

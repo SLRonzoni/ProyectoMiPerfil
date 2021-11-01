@@ -3,8 +3,6 @@
 const {profile,} = require('../../media');
 
 function controller(req,res){
-    console.log(req.query)
-    
     res.json(profile)
 };
 
