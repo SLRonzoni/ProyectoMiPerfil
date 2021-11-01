@@ -17,11 +17,10 @@
 }
 
 .link:hover{
-  background-color:#292828;
-  box-shadow:  0 0 0.3rem grey;
-  color:#FAEBD7;
+  box-shadow:  0 0 0.7rem #d41e1e inset;
+  background-color: aliceblue;
+  color:#292828;
 }
-
 
 h5{
  text-decoration: solid;
@@ -36,12 +35,6 @@ h5{
 .card-body:hover{ 
   box-shadow: 0 0 1rem  #fa5555 inset;
 }
-
-/* .card-body:focus-within{
-  border:2px solid rgb(38, 56, 247);
-  background-color: aliceblue;
-  color:rgb(38, 56, 247);
-} */
 
 p, span{
   color: black;
@@ -63,4 +56,8 @@ p, span{
 
 .fondoAntecedentes{
   height: 297px;
+}
+
+.card-text{
+  margin: 0px;
 }

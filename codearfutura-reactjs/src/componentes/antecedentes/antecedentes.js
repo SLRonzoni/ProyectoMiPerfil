@@ -23,6 +23,8 @@ const Antecedentes = () => {
                         <div className="card-body">
                             <h5 className="card-title">Prosegur S.A.</h5>
                             <p className="card-text">( Analista de Remuneraciones y Liquidadora de Sueldos )</p>
+                            <br></br>
+                            <br></br>
                             <span>Me desempeñé en el área de RR.HH. desde 09/1997 a 08/2005</span>
                             <p></p>
                            <a href ='http://prosegur.com.ar' className="link btn">Ver la empresa</a>
@@ -34,6 +36,8 @@ const Antecedentes = () => {
                         <div className="card-body">
                             <h5 className="card-title">Unionbat S.A.</h5>
                             <p className="card-text">( Liquidadora de Sueldos y Administrativa de RR.HH. )</p>
+                            <br></br>
+                            <br></br>
                             <span>Me desempeñé en el área de RR.HH. desde 07/1991 a 08/1997</span>
                             <p></p>
                             <a href= 'http://unionbat.com.ar' className="link btn">Ver la empresa</a>

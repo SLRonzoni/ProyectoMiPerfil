@@ -1,29 +1,30 @@
-
+  
   .textoConocimiento{
     font-size: 20px;
-    margin-top: 20px ;
+    width: 200px; 
+    margin-top: 15px ;
     color:white;
   }
 
   .textoListaCursos{
     font-size: 17px;
-    margin-top:-30px ;
     color:white;
   }
    
   .linkProyecto{
-    width: 25%;
-    height: 50%;
-    font-size: 15px;
-    margin-left:59%;
-    margin-top:15px;
-    margin-bottom: 30px;
-    justify-content: center;
+    width: 100%;
+    font-size: 13px;
+    margin-left:65%;
+    margin-top:28px;
+    margin-bottom: 8px;
     box-shadow:  0 0 0.4rem #292828;
   }
 
   .btnTexto{
     text-align: start;
+    width: auto;
+    margin-left: -100px;
+    margin-right: 110px;
   }
     
   .linkProyecto:hover{
@@ -39,7 +40,8 @@
   .mostrar{
     font-size: 17px;
     color:white;
-    margin-top:23px;
+    margin-top:40px;
+    margin-left: -115px;
   }
 
   .columna:hover{
@@ -51,25 +53,24 @@
   }
 
   .row{
-    margin-left: -10px;
+    margin-left: 0px;
     margin-top:-20px;
   }
 
   .fondoConocimientos{
-    height: 297px;
+   height: 280px;
+   
   }
 
   .thead-dark, .table{
     color:white;
-    font-size: 15px;
-    width: 105%;
+    font-size: 15px;   
     border-bottom: 1px solid transparent;
-    margin: auto;
+    width: 103%;
   }
 
   .table{
     border: 1px solid white;
-    margin-left:-50px;
   }
 
   .datosBody {
@@ -82,3 +83,13 @@
   .hs{
   text-align: center;
   }
+
+  .alineaBtn{
+   margin-left: 57%;
+   display: flex;
+  }
+
+  .iniFin{
+    width: 75px;
+  }
+

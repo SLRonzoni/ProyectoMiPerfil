@@ -1,11 +1,13 @@
 
+
 h1 {
     font-size: 50px;
     color:white;
 }
 
-.p {
+.pIntro {
     color: white;
+    margin: auto;
 }
 
 p{

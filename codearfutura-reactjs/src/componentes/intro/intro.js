@@ -9,14 +9,14 @@ import Col from 'react-bootstrap/Col';
 const Intro = ({titulo}) => {
     return(
         <header>
-            <Container>
+            <Container className="container">
                 <Row>
                     <Col xs={6} sm={3}>
                         <img className="icon rounded Circle"  src={foto} alt="Foto"></img>
                     </Col>
                     <Col className="texto-intro rounded Circle" xs={12} sm={8}>
                         <h1>{titulo}</h1>
-                        <p className="p">Desarrolladora Web Full Stack y Liquidadora de Sueldos</p>
+                        <p className="pIntro">Desarrolladora Web Full Stack y Liquidadora de Sueldos</p>
                     </Col>
                 </Row>
             </Container>
